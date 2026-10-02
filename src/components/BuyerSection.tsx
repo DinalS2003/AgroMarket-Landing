@@ -25,13 +25,13 @@ export const BuyerSection: React.FC<BuyerSectionProps> = ({ onStartExploring }) 
             </h2>
 
             <p className="text-base sm:text-lg text-[#68747D] leading-relaxed">
-              Find agricultural products from farmers around you and manage your purchases from one mobile app.
+              Filter local farmers by district, browse fresh produce, and manage your purchases from one simple Android app.
             </p>
 
             {/* Feature Bullets */}
             <div className="space-y-3.5 pt-2">
               {[
-                "Discover nearby farmers",
+                "Filter farmers by district",
                 "Browse fresh produce",
                 "View availability and prices",
                 "Chat with farmers",

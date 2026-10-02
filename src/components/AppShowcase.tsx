@@ -20,7 +20,7 @@ export const AppShowcase: React.FC = () => {
       id: 'marketplace',
       label: 'Marketplace',
       badge: 'Discovery',
-      desc: 'Browse fresh crops by category, location, and farm-gate price',
+      desc: 'Browse fresh crops by category, district filter, and farm-gate price',
       benefit: 'Browse fresh produce directly from verified Sri Lankan farmers',
       icon: <ShoppingBag className="w-4 h-4" />
     },
@@ -37,7 +37,7 @@ export const AppShowcase: React.FC = () => {
       label: 'Order Details',
       badge: 'Fulfilment',
       desc: 'Follow orders from confirmation through harvesting and arrival',
-      benefit: 'Track live order progress with PayHere secure payment and in-app grower chat',
+      benefit: 'Track live order progress with encrypted secure payment and in-app grower chat',
       icon: <PackageCheck className="w-4 h-4" />
     },
     {
@@ -261,11 +261,11 @@ export const AppShowcase: React.FC = () => {
               </div>
               <div className="p-3 bg-white rounded-xl border border-neutral-200/80 text-center shadow-2xs">
                 <span className="block text-[10px] uppercase font-bold text-neutral-400">OS Compatibility</span>
-                <span className="text-sm font-extrabold text-[#073B35]">Android &amp; iOS</span>
+                <span className="text-sm font-extrabold text-[#073B35]">Android Only</span>
               </div>
               <div className="p-3 bg-white rounded-xl border border-neutral-200/80 text-center shadow-2xs">
                 <span className="block text-[10px] uppercase font-bold text-neutral-400">Payments</span>
-                <span className="text-sm font-extrabold text-[#073B35]">PayHere Secure</span>
+                <span className="text-sm font-extrabold text-[#073B35]">Encrypted &amp; Secure</span>
               </div>
               <div className="p-3 bg-white rounded-xl border border-neutral-200/80 text-center shadow-2xs">
                 <span className="block text-[10px] uppercase font-bold text-neutral-400">Network Mode</span>

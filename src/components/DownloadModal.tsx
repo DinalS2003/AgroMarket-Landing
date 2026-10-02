@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
-import { X, Check, QrCode, Smartphone, BellRing, Sparkles } from 'lucide-react';
-import appLogo from '../assets/images/logo.jpeg';
+import { X, Check, Smartphone, BellRing, Sparkles, ShieldCheck } from 'lucide-react';
+import appLogo from '../assets/images/logo.png';
 
 interface DownloadModalProps {
   isOpen: boolean;
   onClose: () => void;
-  initialPlatform?: 'android' | 'ios' | 'both';
+  initialPlatform?: 'android';
 }
 
 export const DownloadModal: React.FC<DownloadModalProps> = ({
   isOpen,
-  onClose,
-  initialPlatform = 'both'
+  onClose
 }) => {
-  const [platform, setPlatform] = useState<'android' | 'ios'>(
-    initialPlatform === 'ios' ? 'ios' : 'android'
-  );
   const [contact, setContact] = useState('');
   const [userRole, setUserRole] = useState<'buyer' | 'farmer'>('buyer');
   const [submitted, setSubmitted] = useState(false);
@@ -52,24 +48,41 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({
 
         {!submitted ? (
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <img src={`${appLogo}?v=logo_v3`} alt="AgroMarket App" className="w-8 h-8 rounded-xl object-contain shadow-xs shrink-0" />
+            <div className="flex items-center gap-2.5 mb-2">
+              <img src={`${appLogo}?v=4`} alt="AgroMarket App" className="w-8 h-8 object-contain drop-shadow-xs shrink-0" />
               <span className="text-xs font-bold uppercase tracking-wider text-[#087F4E]">
-                AgroMarket Mobile App
+                AgroMarket Android App
               </span>
             </div>
 
             <h3 className="text-2xl font-extrabold text-[#073B35]">
-              Download AgroMarket App
+              Download AgroMarket APK
             </h3>
             <p className="text-xs sm:text-sm text-[#68747D] mt-1 leading-relaxed">
-              Connect directly with farmers and buyers across Sri Lanka. Enter your mobile number or email to receive the direct app install link.
+              Connect directly with farmers and buyers across Sri Lanka. Download the standalone Android APK (23 MB) directly to your device.
             </p>
 
+            {/* Direct APK Download Button (Main Product) */}
+            <div className="my-5 space-y-2">
+              <a
+                href="/downloads/AgroMarket.apk"
+                download="AgroMarket.apk"
+                target="_self"
+                className="w-full py-4 px-4 rounded-xl text-sm font-extrabold text-white bg-[#087F4E] hover:bg-[#073B35] transition-all shadow-md active:scale-[0.98] flex items-center justify-center gap-2.5"
+              >
+                <Smartphone className="w-5 h-5" />
+                <span>Download AgroMarket APK (23 MB)</span>
+              </a>
+              <div className="flex items-center justify-between text-[11px] text-[#68747D] px-1 font-medium">
+                <span className="text-[#087F4E] font-semibold">✓ Compatible: Android 7.0+</span>
+                <span>Version 1.0.0 (Official Release)</span>
+              </div>
+            </div>
+
             {/* Role preference */}
-            <div className="my-4">
+            <div className="my-4 pt-3 border-t border-neutral-100">
               <label className="block text-xs font-bold text-[#073B35] mb-1.5">
-                I am downloading as a:
+                I am using the app as a:
               </label>
               <div className="grid grid-cols-2 gap-2">
                 <button
@@ -97,24 +110,9 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({
               </div>
             </div>
 
-            {/* Direct APK Download Button */}
-            <div className="my-5">
-              <a
-                href="/downloads/AgroMarket.apk"
-                download="AgroMarket.apk"
-                className="w-full py-3.5 px-4 rounded-xl text-sm font-bold text-white bg-[#087F4E] hover:bg-[#073B35] transition-colors shadow-xs flex items-center justify-center gap-2"
-              >
-                <Smartphone className="w-4 h-4" />
-                <span>Download AgroMarket APK</span>
-              </a>
-              <span className="block text-center text-xs font-semibold text-[#087F4E] mt-1.5">
-                Android APK • Direct Download
-              </span>
-            </div>
-
             <div className="relative flex py-2 items-center">
               <div className="flex-grow border-t border-neutral-200"></div>
-              <span className="flex-shrink mx-3 text-xs text-neutral-400 font-medium">or send link to phone</span>
+              <span className="flex-shrink mx-3 text-xs text-neutral-400 font-medium">or receive update notifications</span>
               <div className="flex-grow border-t border-neutral-200"></div>
             </div>
 
@@ -138,17 +136,14 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({
                 type="submit"
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#073B35] bg-[#F5FAF6] border border-neutral-200 hover:bg-[#E5F4EA] transition-colors"
               >
-                Send Install Link to Mobile
+                Subscribe for District Produce Updates
               </button>
             </form>
 
-            {/* Clean QR code simulation note */}
-            <div className="mt-5 pt-4 border-t border-neutral-100 flex items-center gap-3 text-xs text-[#68747D]">
-              <div className="w-10 h-10 rounded-lg bg-[#F5FAF6] border border-neutral-200 flex items-center justify-center shrink-0 text-[#087F4E]">
-                <QrCode className="w-5 h-5" />
-              </div>
+            <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center gap-2.5 text-xs text-[#68747D]">
+              <ShieldCheck className="w-4 h-4 text-[#087F4E] shrink-0" />
               <p className="text-[11px] leading-tight">
-                Store links are being configured for nationwide rollout. No third-party redirect is performed until certified build links are published.
+                Verified Android APK. Free of ads and malware. Direct installation enabled on Sri Lankan mobile networks.
               </p>
             </div>
           </div>
@@ -159,20 +154,29 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({
             </div>
             
             <h4 className="text-2xl font-extrabold text-[#073B35]">
-              You're on the Priority List!
+              You're Registered!
             </h4>
             
             <p className="text-sm text-[#68747D] leading-relaxed max-w-sm mx-auto">
-              We've registered <strong className="text-[#073B35]">{contact}</strong> for the <span className="capitalize">{platform}</span> rollout for <strong className="text-[#073B35]">{userRole === 'buyer' ? 'buyers' : 'farmers'}</strong>. You will receive direct access instructions as your region activates.
+              We've registered <strong className="text-[#073B35]">{contact}</strong> for AgroMarket Android updates for <strong className="text-[#073B35]">{userRole === 'buyer' ? 'buyers' : 'farmers'}</strong>. If you haven't downloaded the app yet, use the APK download button anytime.
             </p>
 
-            <div className="pt-2">
+            <div className="pt-2 space-y-2">
+              <a
+                href="/downloads/AgroMarket.apk"
+                download="AgroMarket.apk"
+                target="_self"
+                className="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-[#087F4E] hover:bg-[#073B35] transition-colors flex items-center justify-center gap-2"
+              >
+                <Smartphone className="w-4 h-4" />
+                <span>Download AgroMarket APK (23 MB)</span>
+              </a>
               <button
                 type="button"
                 onClick={handleReset}
-                className="w-full py-2.5 px-4 rounded-xl text-sm font-bold text-white bg-[#087F4E] hover:bg-[#073B35] transition-colors"
+                className="w-full py-2 px-4 rounded-xl text-xs font-semibold text-neutral-500 hover:text-[#073B35] transition-colors"
               >
-                Back to Overview
+                Back to Website
               </button>
             </div>
           </div>

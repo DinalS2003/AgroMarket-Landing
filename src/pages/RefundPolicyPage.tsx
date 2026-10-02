@@ -75,7 +75,7 @@ export const RefundPolicyPage: React.FC<RefundPolicyPageProps> = ({ onBack, onOp
 
             <h3 className="text-base font-bold text-[#073B35]">Cancellation After Acceptance and Payment</h3>
             <p>
-              Once a farmer accepts an order and payment has been made via PayHere, cancellation is subject to the order fulfillment status:
+              Once a farmer accepts an order and payment has been completed, cancellation is subject to the order fulfillment status:
             </p>
             <ul className="list-disc pl-5 space-y-1 text-neutral-700">
               <li>
@@ -160,7 +160,7 @@ export const RefundPolicyPage: React.FC<RefundPolicyPageProps> = ({ onBack, onOp
               5. Refund Payment Method & Processing Timeline
             </h2>
             <p>
-              All authorized refunds are processed through <strong>PayHere</strong> to the original payment method (credit card, debit card, or supported bank account) used during checkout.
+              All authorized refunds are processed directly to the original payment method (credit card, debit card, or supported bank account) used during checkout.
             </p>
             <ul className="list-disc pl-5 space-y-1 text-neutral-700">
               <li>Refund processing is initiated within <strong>24 to 48 hours</strong> of dispute resolution.</li>

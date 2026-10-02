@@ -109,7 +109,7 @@ export const PrivacyPolicyPage: React.FC<PolicyPageProps> = ({ onBack, onOpenDow
 
             <h3 className="text-base font-bold text-[#073B35]">Payment Details</h3>
             <p>
-              Payments through Agro Market are processed securely via <strong>PayHere</strong>. Agro Market does not store full payment card numbers or bank credentials on its servers. All payment transactions are encrypted and handled directly by PayHere.
+              Payments through Agro Market are processed securely via authorized and certified payment partners. Agro Market does not store full payment card numbers or bank credentials on its servers. All payment transactions are encrypted and handled directly by authorized payment processors.
             </p>
 
             <h3 className="text-base font-bold text-[#073B35]">In-App Communication</h3>
@@ -130,7 +130,7 @@ export const PrivacyPolicyPage: React.FC<PolicyPageProps> = ({ onBack, onOpenDow
               <li>Facilitate direct connections between local farmers and buyers;</li>
               <li>Process, confirm, and fulfill order requests;</li>
               <li>Coordinate farmer-provided or buyer-arranged pickup and delivery;</li>
-              <li>Facilitate secure payment processing and dispute resolution through PayHere;</li>
+              <li>Facilitate secure payment processing and dispute resolution;</li>
               <li>Detect and prevent fraud, deceptive listings, and prohibited off-platform transactions; and</li>
               <li>Provide customer support and verify farmer account authenticity.</li>
             </ul>
@@ -146,7 +146,7 @@ export const PrivacyPolicyPage: React.FC<PolicyPageProps> = ({ onBack, onOpenDow
                 <strong>Between Buyer and Farmer:</strong> Once an order request is accepted, essential fulfillment details (such as buyer name, delivery landmark, and contact information) are shared to complete delivery or collection.
               </li>
               <li>
-                <strong>Payment Partners:</strong> Transaction details are shared with PayHere to execute payments and process authorized refunds.
+                <strong>Payment Partners:</strong> Transaction details are shared with authorized payment processing partners to execute transactions and process authorized refunds.
               </li>
               <li>
                 <strong>Legal Requirements:</strong> We may disclose information if required under applicable laws of the Democratic Socialist Republic of Sri Lanka or to protect user safety.

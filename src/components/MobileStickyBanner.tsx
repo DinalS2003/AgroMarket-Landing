@@ -1,6 +1,6 @@
 import React from 'react';
 import { Smartphone, Download, X } from 'lucide-react';
-import appLogo from '../assets/images/logo.jpeg';
+import appLogo from '../assets/images/logo.png';
 
 interface MobileStickyBannerProps {
   onOpenDownload: () => void;
@@ -16,13 +16,13 @@ export const MobileStickyBanner: React.FC<MobileStickyBannerProps> = ({ onOpenDo
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-2.5 min-w-0">
           <img 
-            src={`${appLogo}?v=logo_v3`} 
+            src={`${appLogo}?v=4`} 
             alt="AgroMarket logo" 
-            className="w-10 h-10 object-contain rounded-xl shadow-xs shrink-0" 
+            className="w-10 h-10 object-contain drop-shadow-xs shrink-0" 
           />
           <div className="truncate">
             <div className="text-xs font-extrabold text-[#073B35] truncate">AgroMarket Mobile App</div>
-            <div className="text-[10px] text-[#68747D] truncate">Free · Android & iOS Sri Lanka</div>
+            <div className="text-[10px] text-[#68747D] truncate">Free · Android APK Sri Lanka</div>
           </div>
         </div>
 

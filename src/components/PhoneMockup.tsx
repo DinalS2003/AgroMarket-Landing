@@ -40,7 +40,7 @@ const SCREEN_DATA: Record<AppScreenType, ScreenMeta> = {
     src: '/images/order-details',
     alt: 'AgroMarket order status and tracking screen with response deadline and payment breakdown',
     title: 'Order Status & Tracking',
-    benefit: 'Follow order progress from confirmation to harvest readiness and PayHere checkout'
+    benefit: 'Follow order progress from confirmation to harvest readiness and secure checkout'
   },
   'farmer-listing': {
     src: '/images/listing-detail',

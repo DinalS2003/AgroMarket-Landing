@@ -172,7 +172,7 @@ export const TermsPage: React.FC<TermsPageProps> = ({ onBack, onOpenDownload }) 
               7. Payments
             </h2>
             <p>
-              Payments through Agro Market are processed using <em>PayHere</em>.
+              Payments through Agro Market are processed using authorized and secure payment gateways.
             </p>
             <p>
               Agro Market does not store customers' full card details.

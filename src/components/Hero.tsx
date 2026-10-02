@@ -5,7 +5,6 @@ import {
   Sparkles, 
   ShieldCheck, 
   Truck, 
-  QrCode, 
   Smartphone, 
   Bell, 
   MessageSquare,
@@ -60,19 +59,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
                   <span>Download AgroMarket APK</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </a>
-
-                <div 
-                  onClick={onOpenDownload}
-                  className="cursor-pointer inline-flex items-center gap-3 p-2.5 px-4 rounded-2xl bg-white border border-neutral-200/90 shadow-2xs hover:border-[#087F4E]/40 transition-colors w-full sm:w-auto justify-center"
-                >
-                  <div className="w-9 h-9 rounded-xl bg-[#E5F4EA] flex items-center justify-center text-[#087F4E] shrink-0">
-                    <QrCode className="w-5 h-5" />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-xs font-bold text-[#073B35]">Scan with Phone</div>
-                    <div className="text-[10px] text-[#68747D]">Direct mobile install link</div>
-                  </div>
-                </div>
               </div>
 
               <span className="text-xs font-semibold text-[#087F4E] flex items-center gap-1.5 pt-1">
@@ -162,7 +148,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
               </div>
               <div className="text-left">
                 <div className="text-[10px] font-bold text-[#073B35]">
-                  PayHere Protected
+                  Secure Payment Protected
                 </div>
                 <div className="text-[9px] text-neutral-500">
                   Secure direct payment on confirmed orders

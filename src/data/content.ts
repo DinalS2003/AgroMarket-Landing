@@ -100,8 +100,8 @@ export const SAMPLE_CROPS: CropItem[] = [
 export const FEATURES: FeatureItem[] = [
   {
     id: 1,
-    title: "Nearby Farmers",
-    description: "Discover farmers and produce based on location.",
+    title: "Filter by District",
+    description: "Filter verified local farmers and available harvest listings by district across Sri Lanka.",
     icon: "MapPin"
   },
   {
@@ -140,7 +140,7 @@ export const BUYER_STEPS: StepItem[] = [
   {
     number: "01",
     title: "Discover",
-    description: "Find farmers and available crops near you."
+    description: "Filter farmers and available crops by district across Sri Lanka."
   },
   {
     number: "02",

@@ -112,7 +112,7 @@
     <path d="M36 28 v8 h6" stroke="#087F4E" stroke-width="2" stroke-linecap="round"/>
     <text x="56" y="32" font-family="sans-serif" font-size="13" font-weight="800" fill="#064E3B">Awaiting Farmer Acceptance</text>
     <text x="56" y="52" font-family="sans-serif" font-size="11" fill="#065F46">The farmer has 12 hours to review and accept your order request.</text>
-    <text x="56" y="68" font-family="sans-serif" font-size="11" fill="#065F46">Once accepted, you can complete payment with PayHere.</text>
+    <text x="56" y="68" font-family="sans-serif" font-size="11" fill="#065F46">Once accepted, you can complete payment securely.</text>
   </g>
 
   <!-- Cancel order button -->

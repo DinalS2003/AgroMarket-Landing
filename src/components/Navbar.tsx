@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowDownToLine } from 'lucide-react';
-import appLogo from '../assets/images/logo.jpeg';
+import appLogo from '../assets/images/logo.png';
 
 interface NavbarProps {
   onOpenDownload: () => void;
@@ -55,9 +55,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDownload, onNavigateHome }
             aria-label="AgroMarket - Official Mobile Application"
           >
             <img 
-              src={`${appLogo}?v=logo_v3`} 
+              src={`${appLogo}?v=4`} 
               alt="AgroMarket App Logo" 
-              className="w-12 h-12 sm:w-14 sm:h-14 object-contain rounded-2xl shadow-xs transition-transform duration-200 group-hover:scale-105 shrink-0" 
+              className="w-12 h-12 sm:w-13 sm:h-13 object-contain drop-shadow-xs transition-transform duration-200 group-hover:scale-105 shrink-0" 
             />
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-black tracking-tight text-[#073B35] leading-none">

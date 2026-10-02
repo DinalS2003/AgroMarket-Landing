@@ -64,7 +64,7 @@ export const DownloadCTA: React.FC<DownloadCTAProps> = ({ onOpenDownload }) => {
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Secure PayHere payments</span>
+                <span>Secure encrypted payments</span>
               </span>
             </div>
 

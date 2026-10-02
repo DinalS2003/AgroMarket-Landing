@@ -1,5 +1,5 @@
 import React from 'react';
-import appLogo from '../assets/images/logo.jpeg';
+import appLogo from '../assets/images/logo.png';
 
 interface FooterProps {
   onNavigatePage: (page: 'privacy' | 'terms' | 'refund') => void;
@@ -16,9 +16,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
           <div className="space-y-2">
             <div className="flex items-center gap-3">
               <img 
-                src={`${appLogo}?v=logo_v3`} 
+                src={`${appLogo}?v=4`} 
                 alt="AgroMarket logo" 
-                className="w-11 h-11 object-contain rounded-2xl shadow-2xs shrink-0" 
+                className="w-11 h-11 object-contain drop-shadow-xs shrink-0" 
               />
               <span className="text-xl font-extrabold text-[#073B35]">
                 AgroMarket
